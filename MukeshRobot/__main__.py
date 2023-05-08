@@ -208,7 +208,7 @@ def start(update: Update, context: CallbackContext):
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
             time.sleep(0.1)
-            lol.edit_text("˹ᴀᴀʀᴏʜɪ ✘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ˼ 🫧 ꜱᴛᴀʀᴛɪɴɢ... ")
+            lol.edit_text("˹sᴡᴀɢ ✘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ˼ 🫧 ꜱᴛᴀʀᴛɪɴɢ... ")
             time.sleep(0.1)
             lol.delete()
             
