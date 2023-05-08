@@ -83,26 +83,6 @@ PM_START_TEXT = """
 *๏ ¢ℓι¢к ση нєℓρ вυттση тσ gєт ιηƒσямαтισηѕ αвσυт тнιѕ вσт ¢σммαη∂ѕ.*
 """
 
-buttons = [
-    [
-        InlineKeyboardButton(
-            text="🍃ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ🍃",
-            url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
-        ),
-    ],
-    [
-        InlineKeyboardButton(text="❤‍🔥ᴄᴏᴍᴍᴀɴᴅs❤‍🔥", callback_data="help_back"),
-    ],
-    [
-        InlineKeyboardButton(text="💞ᴀʙᴏᴜᴛ💞", callback_data="mukesh_"),
-        InlineKeyboardButton(text="🥺ᴄʜᴀᴛ ɢʀᴏᴜᴘ🥺", url=f"https://t.me/{SUPPORT_CHAT}"),
-    ],
-    [
-        InlineKeyboardButton(text="💖ᴏᴡɴᴇʀ[ᴅɪʟ❣️]💖", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🥺ᴍᴜsɪᴄ🥺", callback_data="Music_"),
-    ],
-]
-
 HELP_STRINGS = f"""
 » {BOT_NAME} [♥️](https://te.legra.ph/file/2e5b3e823445dd551238d.png) ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀʙᴏᴜᴛ sᴘᴇᴄɪғɪᴄs ᴄᴏᴍᴍᴀɴᴅ"""
 
