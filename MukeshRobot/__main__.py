@@ -93,14 +93,6 @@ buttons = [
     [
         InlineKeyboardButton(text="❤‍🔥ᴄᴏᴍᴍᴀɴᴅs❤‍🔥", callback_data="help_back"),
     ],
-    [
-        InlineKeyboardButton(text="💞ᴀʙᴏᴜᴛ💞", callback_data="mukesh_"),
-        InlineKeyboardButton(text="🥺ᴄʜᴀᴛ ɢʀᴏᴜᴘ🥺", url=f"https://t.me/{SUPPORT_CHAT}"),
-    ],
-    [
-        InlineKeyboardButton(text="💖ᴏᴡɴᴇʀ[ᴅɪʟ❣️]💖", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🥺ᴍᴜsɪᴄ🥺", callback_data="Music_"),
-    ],
 ]
 
 HELP_STRINGS = f"""
@@ -903,7 +895,7 @@ def main():
             LOGGER.warning(e.message)
 
     CommandHandler("test", test)
-    start_handler = CommandHandler("rstart", rstart)
+    start_handler = CommandHandler("start", start)
 
     help_handler = CommandHandler("help", get_help)
     help_callback_handler = CallbackQueryHandler(help_button, pattern=r"help_.*")
@@ -922,7 +914,7 @@ def main():
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
 
     # dispatcher.add_handler(test_handler)
-    dispatcher.add_handler(rstart_handler)
+    dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
     dispatcher.add_handler(about_callback_handler)
     dispatcher.add_handler(Music_callback_handler)
@@ -947,6 +939,6 @@ def main():
 
 if __name__ == "__main__":
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
-    telethn.rstart(bot_token=TOKEN)
-    pbot.rstart()
+    telethn.start(bot_token=TOKEN)
+    pbot.start()
     main()
