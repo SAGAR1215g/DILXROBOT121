@@ -910,7 +910,7 @@ def main():
             LOGGER.warning(e.message)
 
     CommandHandler("test", test)
-    start_handler = CommandHandler("start", start)
+    start_handler = CommandHandler("rstart", rstart)
 
     help_handler = CommandHandler("help", get_help)
     help_callback_handler = CallbackQueryHandler(help_button, pattern=r"help_.*")
