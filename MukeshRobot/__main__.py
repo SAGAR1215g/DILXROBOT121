@@ -82,13 +82,6 @@ PM_START_TEXT = """
 ──────────────────
 *๏ ¢ℓι¢к ση нєℓρ вυттση тσ gєт ιηƒσямαтισηѕ αвσυт тнιѕ вσт ¢σммαη∂ѕ.*
 """
- file with 0 additions and 20 deletions.
-SplitUnified
-  20 changes: 0 additions & 20 deletions20  
-MukeshRobot/__main__.py
-Expand Up	@@ -83,26 +83,6 @@ def get_readable_time(seconds: int) -> str:
-*๏ ¢ℓι¢к ση нєℓρ вυттση тσ gєт ιηƒσямαтισηѕ αвσυт тнιѕ вσт ¢σммαη∂ѕ.*
-"""
 
 buttons = [
     [
